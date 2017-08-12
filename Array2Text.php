@@ -32,8 +32,11 @@ function Array2Text( $array, $options ) {
   
   /* Return the plain text */
   if( isset($options) ){
-	if( isset($options['comma']) && options['comma'] === true ){
-	    $text = str_replace(",", "", $text);	
+	if( isset($options['comma']) && $options['comma'] === true ){
+	    /*Remove commas */
+	    $text = str_replace(",", " ", $text);
+	    /*Remove extra spaces */
+	    $text = preg_replace('/\s+/', ' ', $text);
 	}
   }
   
