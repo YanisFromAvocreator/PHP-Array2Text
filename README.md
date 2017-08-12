@@ -4,7 +4,7 @@ PHP function to get the plain text of a multidimensional array
 # Usage
 
 
-<?php
+<pre>
 
 $cars = array
   (
@@ -19,7 +19,7 @@ $cars = array
 $text = Array2Text($cars);
 
 echo $text";
-?>
+</pre>
 
 
 will output : 
