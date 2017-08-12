@@ -19,7 +19,7 @@ $cars = array
 $text = Array2Text($cars);
 
 echo $text";
-<?php
+?>
 
 
 will output : 
