@@ -12,13 +12,11 @@ $cars = array
     array("BMW",15,13),
     array("Saab",5,2),
     array("Land Rover",17,15)
-  );
 );
-
 
 $text = Array2Text($cars, []);
 
-echo $text";
+echo $text;
 </pre>
 
 
