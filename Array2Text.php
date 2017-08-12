@@ -6,7 +6,7 @@ Made by @YanisOSLM - https://twitter.com/YanisOSLM
 
 **************************************************/
  
-function Array2Text( $array ) {
+function Array2Text( $array, $options ) {
   
   /* First, json_encode the array (JSON_UNESCAPED_UNICODE is recommended, cf step 2 ) */
   $text = json_encode($array, JSON_UNESCAPED_UNICODE );
@@ -29,6 +29,13 @@ function Array2Text( $array ) {
   foreach( $exclusions as $pat ){
 		$text = trim(str_replace($pat, '', $text));
 	}
+  
+  /* Return the plain text */
+  if( isset($options) ){
+	if( isset($options['comma']) && options['comma'] === true ){
+	    $text = str_replace(",", "", $text);	
+	}
+  }
   
   /* Return the plain text */
   return $text;
