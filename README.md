@@ -16,7 +16,7 @@ $cars = array
 );
 
 
-$text = Array2Text($cars);
+$text = Array2Text($cars, []);
 
 echo $text";
 </pre>
