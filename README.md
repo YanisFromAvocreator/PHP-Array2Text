@@ -3,7 +3,7 @@ PHP function to get the plain text of a multidimensional array
 
 # Usage
 
-<pre>
+
 <?php
 
 $cars = array
@@ -20,7 +20,7 @@ $text = Array2Text($cars);
 
 echo $text";
 <?php
-</pre>
+
 
 will output : 
 
